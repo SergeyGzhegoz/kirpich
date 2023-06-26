@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+.banner{
+    /*width: 1900px;*/
+    height: 434px;
+    background-image: url(img/banner.png);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around
+}
+
+.banner h1{
+    color: #ffff;
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+/*WRAPPER*/
+
+.wrapper{
+    width: 1234px;
+    margin: 20px auto;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+    margin: 0 45px;
+}
+
+.GubName{
+    width: 1234px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.GubName div{
+    width: 300px;
+    height: 60px;
+    border: 1px solid #000000;
+    margin: 13px auto;
+}
+
+.GubName div a{
+    font-weight: 700;
+    font-size: 21px;
+    color: #385c8b;
+    text-decoration: none;
+    margin: 15.5px;
+    text-align: center;
+    display:block
+}
+
+/*FOOTER*/
+footer{
+    background-image: url(img/footer.png);
+    background-color: #c2c2c2;
+    height: 180px;
+    text-align: center;
+    color: #000000;
+    font-size: 22px;
+    /* max-width: 1592px; */
+    margin: 20px auto;
+    margin-bottom: 0px;
+    padding-top: 40px;
+
+}
+
+/* сетка подвала */
+[class^="box-"] {
+    display: grid;
+    place-items: end;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    height: 100px;
+    grid-template-columns: auto 400px 400px;
+    grid-template-areas:
+        "void o-projecte we-socials"
+        "copyright writeus socialicons";
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.box-1 {
+    grid-area: copyright;
+    justify-self: start;
+    font-size: 26px;
+}
+
+.box-2 {
+    grid-area: o-projecte;
+}
+
+.box-3 {
+    grid-area: we-socials;
+}
+
+.box-4 {
+    grid-area: writeus;
+}
+
+.box-5 {
+    grid-area: socialicons;
+    display: inline;
+    text-align: right;
+
+}
+
+.box-5 img {
+    width: 40px;
+    margin: 5px;
+
+}
+
+.box-void {
+    grid-area: void;
+}
+
+.container a{
+    text-decoration: none;
+    color: #ffffff;
+}

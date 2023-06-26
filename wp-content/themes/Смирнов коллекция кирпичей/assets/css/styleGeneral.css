@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+.banner{
+    /*width: 1900px;*/
+    height: 434px;
+    background-image: url(img/banner.png);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around
+}
+
+.banner h1{
+    color: #ffff;
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+
+/*MAIN*/
+.wrapper{
+    width: 1234px;
+    margin: 20px auto;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.al{
+    font-weight: 200;
+    font-size: 36px;
+}
+
+.str{
+    width: 326px;
+    height: 68px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.search_knp{
+    width: 150px;
+    height: 68px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.slider{
+    margin-top: 20px;
+    width: 1160px;
+    height: 220px;
+    border: 1px solid #000000;
+}
+
+.wrapper h1{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 48px;
+    text-align: center;
+}
+
+
+
+.Gubern{
+    margin-top: 140px;
+    width: 1234px;
+    height: 450px;
+    background-image: url(img/gubern.png);
+    transition: 0.8s;
+}
+
+.Gubern:hover{
+    box-shadow: 10px 10px 10px #DA8627;  
+}
+
+.Gubern p{
+    font-weight: 900;
+    font-size: 48px;
+    color: #ffffff;
+    padding-top: 32px;
+    margin-left: 32px;
+}
+
+.Foreign{
+    margin-top: 140px;
+    width: 1234px;
+    height: 450px;
+    background-image: url(img/Foreign.png);
+    transition: 0.8s;
+}
+
+.Foreign:hover{
+    box-shadow: 10px 10px 10px #DA8627;
+}
+
+.Foreign p{
+    font-weight: 900;
+    font-size: 48px;
+    color: #ffffff;
+    float: right;
+    padding-top: 32px;
+    margin-right: 32px;
+}
+
+.Primechniya{
+    margin-top: 124px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 95px;
+}
+
+.wrapper a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*FOOTER*/
+footer{
+    background-image: url(img/footer.png);
+    background-color: #c2c2c2;
+    height: 180px;
+    text-align: center;
+    color: #000000;
+    font-size: 22px;
+    /* max-width: 1592px; */
+    margin: 20px auto;
+    margin-bottom: 0px;
+    padding-top: 40px;
+
+}
+
+/* сетка подвала */
+[class^="box-"] {
+    display: grid;
+    place-items: end;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    height: 100px;
+    grid-template-columns: auto 400px 400px;
+    grid-template-areas:
+        "void o-projecte we-socials"
+        "copyright writeus socialicons";
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.box-1 {
+    grid-area: copyright;
+    justify-self: start;
+    font-size: 26px;
+}
+
+.box-2 {
+    grid-area: o-projecte;
+}
+
+.box-3 {
+    grid-area: we-socials;
+}
+
+.box-4 {
+    grid-area: writeus;
+}
+
+.box-5 {
+    grid-area: socialicons;
+    display: inline;
+    text-align: right;
+
+}
+
+.box-5 img {
+    width: 40px;
+    margin: 5px;
+
+}
+
+.box-void {
+    grid-area: void;
+}
+
+.container a{
+    text-decoration: none;
+    color: #ffffff;
+}

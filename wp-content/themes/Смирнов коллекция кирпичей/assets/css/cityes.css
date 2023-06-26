@@ -1,0 +1,16 @@
+.wrapper--cityes {
+    width: 1234px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper--cityes .filter{
+    width: 20%;
+    background-color: antiquewhite;
+}
+
+.wrapper--cityes .object{
+    width: 80%;
+    padding-left: 10px;
+}
